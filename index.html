@@ -35,71 +35,8 @@
 		
 
 		<!-- //header -->
-		<div class="header-bottom">
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-						<div class="logo">
-							<h1><a class="navbar-brand" href="index.html"><span>好家帮</span></a></h1>
-						</div>
-					</div>
+		<div id="header">
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav class="cl-effect-1" id="cl-effect-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html" data-hover="Home">Home</a></li>
-								<li><a href="about.html" data-hover="About">About</a></li>
-								<li class="dropdown menu__item">
-									<a href="#" class="dropdown-toggle menu__link active" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true"
-									    aria-expanded="false">Pages<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="codes.html">Short Codes</a></li>
-										<li><a href="icons.html">Web Icons</a></li>
-									</ul>
-								</li>
-								<li><a href="categories.html" data-hover="Categories">Categories</a></li>
-								<li><a href="contact.html" data-hover="Contact">Contact</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- /.navbar-collapse -->
-				</nav>
-			</div>
-		</div>
-		<div class="container">
-			<div class="callbacks_container">
-				<ul class="rslides" id="slider3">
-					<li>
-
-						<div class="slider-info">
-							<h3>Welcome to Tract</h3>
-							<p>Priceless housing for the lowest price</p>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<h3>Welcome to Tract</h3>
-							<p>Attractive home purchase offers</p>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<h3>Welcome to Tract</h3>
-							<p>Your success in property operations</p>
-						</div>
-					</li>
-
-				</ul>
-
-			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -202,6 +139,7 @@
 	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
+            $("#header").load("common/header.html");
 			// Slideshow 3
 			$("#slider3").responsiveSlides({
 				auto: true,
@@ -216,7 +154,6 @@
 					$('.events').append("<li>after event fired.</li>");
 				}
 			});
-
 		});
 	</script>
 	<!-- smooth scrolling -->
