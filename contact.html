@@ -163,9 +163,10 @@
 				easingType: 'linear' 
 				};
 			*/
-            $("#header").load("common/header.html");
-            $(".navbar-collapse .navbar-nav li").removeClass("active")
-            $(".navbar-collapse .nav-contact").addClass("active")
+            $("#header").load("common/header.html", function () {
+                $(".navbar-collapse .navbar-nav li").removeClass("active")
+                $(".navbar-collapse .nav-contact").addClass("active")
+            });
 			$().UItoTop({
 				easingType: 'easeOutQuart'
 			});

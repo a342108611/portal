@@ -159,9 +159,11 @@
 	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
-            $("#header").load("common/header.html");
-            $(".navbar-collapse .navbar-nav li").removeClass("active")
-            $(".navbar-collapse .nav-index").addClass("active")
+            $("#header").load("common/header.html", function () {
+                $(".navbar-collapse .navbar-nav li").removeClass("active")
+                $(".navbar-collapse .nav-index").addClass("active")
+            });
+
 			// Slideshow 3
 			$("#slider3").responsiveSlides({
 				auto: true,
