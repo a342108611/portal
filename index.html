@@ -163,6 +163,8 @@
 		// You can also use "$(window).load(function() {"
 		$(function () {
             $("#header").load("common/header.html");
+            $(".navbar-collapse .navbar-nav li").removeClass("active")
+            $("#nav-index").addClass("active")
 			// Slideshow 3
 			$("#slider3").responsiveSlides({
 				auto: true,
