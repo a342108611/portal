@@ -31,57 +31,7 @@
 <body>
 	<!--Slider-->
 	<div class="inner-bnr">
-		<!-- header
-		<div class="header">
-			<div class="container">
-				<div class="w3l_header_left">
-					<ul>
-						<li><span class="fa fa-envelope" aria-hidden="true"></span> <a href="mailto:info@example.com">info@example.com</a></li>
-					</ul>
-				</div>
-				<div class="w3l_header_right">
-					<div class="w3ls-social-icons">
-						<a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
-						<a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
-						<a class="pinterest" href="#"><span class="fa fa-pinterest-p"></span></a>
-						<a class="linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-
-		//header -->
-		<div class="header-bottom">
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-						<div class="logo">
-							<h1><a class="navbar-brand" href="index.html"><span>好家帮</span></a></h1>
-						</div>
-					</div>
-
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-						<nav class="cl-effect-1" id="cl-effect-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="index.html" data-hover="Home">首页</a></li>
-								<li><a href="about.html" data-hover="About">关于我们</a></li>
-								<li><a href="categories.html" data-hover="Categories">服务</a></li>
-								<li><a href="contact.html" data-hover="Contact">联系我们</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- /.navbar-collapse -->
-				</nav>
-			</div>
+		<div id="header">
 		</div>
 	</div>
 	<!--//Slider-->
@@ -784,6 +734,10 @@
 				easingType: 'linear' 
 				};
 			*/
+            $("#header").load("common/header.html", function () {
+                $(".navbar-collapse .navbar-nav li").removeClass("active")
+                $(".navbar-collapse .nav-codes").addClass("active")
+            });
 			$().UItoTop({
 				easingType: 'easeOutQuart'
 			});
